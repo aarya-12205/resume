@@ -1,0 +1,108 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #fdfdfb;
+    display: flex; /* Added for better layout control */
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1; /* Allow the container to grow and take up available space */
+}
+.left {
+    width: 35%;
+    background-color: #9da692;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.left img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+.left h3 {
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    align-self: flex-start;
+}
+.left p, .left ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: left;
+}
+.left ul {
+    padding-left: 20px;
+}
+.left hr {
+    border: none;
+    border-top: 1px solid white;
+    width: 100%;
+    margin: 10px 0;
+}
+.right {
+    width: 65%;
+    padding: 30px;
+    background-color: #fcf9f4;
+    color: #636659;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes content to top and bottom */
+    min-height: 100%;
+}
+.right h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 2.5rem;
+}
+.right h2 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #888;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+.section-title {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+.experience, .education {
+    margin-top: 15px;
+}
+.experience h4, .education h4 {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+.experience p, .education p {
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 15px 30px;
+    background-color: #ebede5;
+    color:#757969;
+    border-top: 1px solid #ddd;
+    width: 60%; /* Make footer span the entire width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin:auto;
+}
